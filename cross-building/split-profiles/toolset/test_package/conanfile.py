@@ -6,9 +6,9 @@ from conans import ConanFile, CMake, tools
 class ToolsetTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
-    options = {"shared": [True, False]}
+    #options = {"shared": [True, False]}
 
-    default_options = {"shared": True}
+    #default_options = {"shared": True}
             
     def build(self):
         cmake = CMake(self)
